@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "name": "Orbiter Finance",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/orbiter.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://orbiterfin-ance.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://orbiterfin-ance.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "qfxfdfoibp",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Orbiter Finance™ | Home Official Site",
+        "meta_descr": "Orbiter Finance is a ZK-tech Based Ethereum Acceleration Engine, boosting L2s performance and decreasing gas consumption.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/download-1.jpeg\" alt=\"orbiter finance\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tXxPxJssa7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Orbiter Finance: Revolutionizing Decentralized Finance with Cross-Chain Liquidity</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of decentralized finance (DeFi), Orbiter Finance has emerged as a trailblazer, revolutionizing the way liquidity is exchanged across multiple blockchain networks. With its innovative cross-chain liquidity protocol, Orbiter Finance enables seamless interoperability and frictionless asset transfers, ushering in a new era of efficiency and accessibility in the DeFi ecosystem. In this article, we delve into the unique features, benefits, and impact of Orbiter Finance, as it takes DeFi to new heights.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Cross-Chain Liquidity:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. The Challenge of Interoperability:</b> Blockchain networks are often siloed, making it difficult for assets to move seamlessly between different chains. This lack of interoperability hampers liquidity and limits the potential of decentralized applications.\n<br>\n<br><b>b. Cross-Chain Liquidity Solutions:</b> Cross-chain liquidity solutions aim to bridge the gap between disparate blockchain networks, enabling the transfer of assets across chains. These solutions facilitate the creation of a unified liquidity pool, enabling users to access assets from multiple chains and participate in a wider range of DeFi applications.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Introducing Orbiter Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. The Vision:</b> <a href=\"https://orbiterfin-ance.github.io/\" class=\"text-primary\"><b>Orbiter Finance</b></a> envisions a future where cross-chain liquidity is accessible to everyone, regardless of the blockchain network they are using. The platform is designed to simplify the process of exchanging assets across chains, unlocking new opportunities for DeFi participants and fostering a more inclusive ecosystem.\n<br>\n<br><b>b. Cross-Chain Bridge:</b> Orbiter Finance's flagship product is its cross-chain bridge, a decentralized protocol that enables the seamless transfer of assets between different blockchain networks. The bridge acts as a conduit, allowing users to move their assets across chains without the need for intermediaries or centralized exchanges.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features and Advantages of Orbiter Finance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Seamless Asset Transfers:</b> Orbiter Finance eliminates the barriers to asset transfers between blockchain networks. Users can effortlessly move their assets from one chain to another, unlocking liquidity and expanding their access to a wider range of DeFi applications.\n<br>\n<br><b>b. Decentralized and Trustless:</b> Orbiter Finance operates in a decentralized manner, ensuring that users retain full control over their assets throughout the cross-chain transfer process. The protocol utilizes smart contracts to automate and secure asset swaps, eliminating the need for intermediaries and enhancing trustlessness.\n<br>\n<br><b>c. Enhanced Liquidity:</b> By connecting multiple blockchain networks, Orbiter Finance creates a unified liquidity pool that increases overall market depth and accessibility. This enhanced liquidity benefits both users and DeFi projects, fostering a vibrant ecosystem and enabling new financial innovations.\n<br>\n<br><b>d. Cost-Effective:</b> Traditional methods of exchanging assets between different blockchain networks often incur high fees and lengthy transaction times. Orbiter Finance tackles this issue by providing a cost-effective solution with minimal fees and fast transaction confirmations, making cross-chain liquidity more accessible to all users.\n<br>\n<br><b>e. Security and Auditing:</b> <a href=\"https://www.orbiter.finance/\" class=\"text-primary\"><b>Orbiter Finance</b></a> places a strong emphasis on security and conducts regular audits to ensure the integrity of its protocols. By prioritizing security measures, such as code audits and bug bounties, Orbiter Finance minimizes the risk of vulnerabilities and safeguards user assets.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Impact and Use Cases:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Improved DeFi Accessibility:</b> Orbiter Finance's cross-chain liquidity protocol empowers users to access a broader range of DeFi applications and services. It opens up opportunities for yield farming, lending and borrowing, decentralized exchanges, and more, regardless of the blockchain network they use.\n<br>\n<br><b>b. Token Swaps and Asset Diversification:</b> Orbiter Finance enables users to swap tokens between different chains, facilitating asset diversification strategies and reducing exposure to a single blockchain. This flexibility allows users to optimize their portfolios and mitigate risk.\n<br>\n<br><b>c. Cross-Chain NFT Marketplace:</b> With the rise of non-fungible tokens (NFTs), Orbiter Finance can facilitate cross-chain NFT transfers and enable the creation of a decentralized marketplace where users can seamlessly trade digital assets across different chains.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Future Developments and Outlook:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Network Expansion:</b> Orbiter Finance has plans to expand its cross-chain bridge to support additional blockchain networks, providing an even broader range of options for asset transfers and liquidity provision.\n<br>\n<br><b>b. Deeper Integration with DeFi Ecosystem:</b> Orbiter Finance aims to forge partnerships and integrations with other DeFi projects and platforms to foster collaboration and expand the reach of its cross-chain liquidity solutions. This integration will contribute to a more interconnected and efficient DeFi ecosystem as a whole.\n<br>\n<br><b>c. User-Friendly Interface:</b> Orbiter Finance recognizes the importance of user experience and plans to develop a user-friendly interface that simplifies the asset transfer process across chains. This approach aims to make cross-chain liquidity accessible to both experienced and novice users, driving adoption and mainstream acceptance.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion: Pioneering Cross-Chain Liquidity in DeFi</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Orbiter Finance is at the forefront of the DeFi revolution, driving the adoption of cross-chain liquidity solutions that break down the barriers between blockchain networks. By offering seamless asset transfers, enhanced liquidity, and a decentralized approach, OrbiterFinance empowers users to unlock the full potential of decentralized finance. With its user-centric design and commitment to security, Orbiter Finance is paving the way for a more inclusive and interconnected DeFi ecosystem. As the platform continues to expand its network, deepen its integration with other DeFi projects, and enhance user experience, it is poised to revolutionize the way assets are exchanged and utilized across blockchain networks. With Orbiter Finance leading the charge, cross-chain liquidity is no longer a distant dream but a tangible reality in the world of decentralized finance.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tXxPyVW9un",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
